@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Score Board Project | Scrimba</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="score-board">
+                <h3 class="score-board-text">HOME</h3>
+                <div class="score">
+                  <span class="current-score" id="home-score">0</span>
+                </div>
+                <div class="score-increments">
+                  <div class="increments">
+                    <span class="incs" onclick="incrementByOne()">+1</span>
+                  </div>
+                  <div class="increments">
+                    <span class="incs" onclick="incrementByTwo()">+2</span>
+                  </div>
+                  <div class="increments" onclick="incrementByThree()">
+                    <span class="incs">+3</span>
+                  </div>
+                </div>
+            </div>
+            <div class="score-board">
+                <h3 class="score-board-text">GUEST</h3>
+                <div class="score">
+                  <span class="current-score" id="guest-score">0</span>
+                </div>
+                <div class="score-increments">
+                  <div class="increments">
+                    <span class="incs" onclick="incrementByOne('Guest')">+1</span>
+                  </div>
+                  <div class="increments">
+                    <span class="incs" onclick="incrementByTwo('Guest')">+2</span>
+                  </div>
+                  <div class="increments">
+                    <span class="incs" onclick="incrementByThree('Guest')">+3</span>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
